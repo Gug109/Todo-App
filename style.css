@@ -76,10 +76,10 @@ body {
 }
 
 .tasks .task span {
-  font-size: 14px;
+  font-size: 10px;
   background-color: #6a07c7;
   color: white;
-  padding: 10px 16px;
+  padding: 6px 16px;
   border-radius: 4px;
   cursor: pointer;
 }

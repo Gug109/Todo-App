@@ -10,6 +10,10 @@ if (window.localStorage.getItem("tasks")) {
 }
 getTaskFromLocalStorage();
 
+if (inputEle.value < 0 || inputEle > 100) {
+    alert("Value hsould be between 0 - 100: ");
+}
+
 submitEle.onclick = function () {
     if (inputEle.value !== "") {
         addTaskToArray(inputEle.value);
@@ -90,7 +94,7 @@ tasksDiv.onclick = ((e) => {
         updateStatusInLocalStorage(e.target.getAttribute("data-id"));
     }
 })
-
+z
 
 function deleteTaskFromLocalStorage(taskId) {
     arrayOfTasks = arrayOfTasks.filter((task) => task.id != taskId);
@@ -109,5 +113,3 @@ deleteAll.onclick = function (e) {
     arrayOfTasks = [];
     window.localStorage.removeItem("tasks")
 }
-
-
